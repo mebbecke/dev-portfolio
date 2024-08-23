@@ -14,7 +14,7 @@ const Header = () => {
       </h1>
       <div className="flex flex-row items-center gap-3">
         <ThemeToggleButton />
-        <Button variant="ghost">
+        <Button variant="ghost" size="small">
           <MenuIcon />
         </Button>
       </div>

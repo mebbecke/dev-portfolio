@@ -6,11 +6,17 @@ export default {
     fontFamily: {
       sans: "Poppins",
     },
-    extend: {},
+    extend: {
+      colors: {
+        sky: "#4FC3F7", // primary
+        plumber: "#1A1A1A", // background
+        darkGray: "#484E53", // titles
+        lightGray: "#E1E1E1", // text on dark mode
+      },
+      backgroundImage: {
+        pattern: "url(/images/bg.png)",
+      },
+    },
   },
   plugins: [],
 }
-
-// 4FC3F7 - azul
-// 1A1A1A - chumbo
-// 484E53 - cinza-escuro (titulos e etc no claro)

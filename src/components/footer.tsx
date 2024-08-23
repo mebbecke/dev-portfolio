@@ -5,14 +5,16 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center space-y-6 border-t border-solid border-gray-500 py-8">
       <div className="flex flex-row gap-6">
-        <Button variant="social">
-          <Linkedin />
+        <Button variant="social" size="small">
+          <Linkedin size={20} />
         </Button>
-        <Button variant="social">
-          <Github />
+        <Button variant="social" size="small">
+          <Github size={20} />
         </Button>
       </div>
-      <p className="text-[#484E53] dark:text-gray-400">2024 - Marina Ebbecke</p>
+      <p className="text-sm text-darkGray dark:text-gray-400">
+        2024 - Marina Ebbecke
+      </p>
     </div>
   )
 }

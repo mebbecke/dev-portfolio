@@ -2,22 +2,22 @@ import { ComponentProps, ReactNode } from "react"
 import { tv, VariantProps } from "tailwind-variants"
 
 const buttonVariants = tv({
-  base: "justify-center rounded-xl flex items-center p-2",
+  base: "justify-center rounded-full flex items-center",
   variants: {
     variant: {
       primary:
-        "text-white border-2 border-solid dark:border-[#4FC3F7] border-none bg-[#4FC3F7] dark:bg-transparent",
+        "text-white dark:border dark:border-solid dark:border-sky border-none bg-sky dark:bg-transparent p-3",
       secondary:
-        "dark:text-gray-300 text-[#4FC3F7] border-2 border-solid dark:border-gray-600 border-[#4FC3F7]",
+        "dark:text-gray-300 text-sky border-2 border-solid dark:border-gray-600 border-sky p-3",
       ghost: "dark:text-white border-none",
       social:
-        "dark:text-gray-400 text-[#484E53] rounded-full border-2 dark:border-gray-600 border-[#484E53]",
+        "dark:text-gray-400 text-darkGray border-2 dark:border-gray-600 border-darkGray p-2",
     },
 
     // TODO: configurar variantes de tamanho
     size: {
-      default: "text-base",
-      small: "text-xs",
+      default: "text-base w-40",
+      small: "text-sm",
     },
   },
 
