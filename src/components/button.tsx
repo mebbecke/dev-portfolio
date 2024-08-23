@@ -6,16 +6,18 @@ const buttonVariants = tv({
   variants: {
     variant: {
       primary:
-        "text-white border border-2 border-solid dark:border-[#4FC3F7] border-none bg-[#4FC3F7] dark:bg-transparent",
+        "text-white border-2 border-solid dark:border-[#4FC3F7] border-none bg-[#4FC3F7] dark:bg-transparent",
       secondary:
-        "dark:text-gray-300 text-[#4FC3F7] border border-2 border-solid dark:border-gray-600 border-[#4FC3F7]",
+        "dark:text-gray-300 text-[#4FC3F7] border-2 border-solid dark:border-gray-600 border-[#4FC3F7]",
       ghost: "dark:text-white border-none",
+      social:
+        "dark:text-gray-400 text-[#484E53] rounded-full border-2 dark:border-gray-600 border-[#484E53]",
     },
 
     // TODO: configurar variantes de tamanho
     size: {
-      default: "py-2",
-      full: "w-full h-11",
+      default: "text-base",
+      small: "text-xs",
     },
   },
 

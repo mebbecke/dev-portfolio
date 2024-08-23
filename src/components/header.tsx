@@ -8,14 +8,16 @@ import ThemeToggleButton from "./theme-toggle"
 
 const Header = () => {
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className="flex flex-row items-center justify-between px-8 py-6">
       <h1 className="light:text-black text-2xl font-bold dark:text-white">
         Marina
       </h1>
-      <Button variant="ghost">
-        <MenuIcon />
-      </Button>
-      <ThemeToggleButton />
+      <div className="flex flex-row items-center gap-3">
+        <ThemeToggleButton />
+        <Button variant="ghost">
+          <MenuIcon />
+        </Button>
+      </div>
     </div>
   )
 }

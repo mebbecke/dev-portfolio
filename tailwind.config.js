@@ -13,3 +13,4 @@ export default {
 
 // 4FC3F7 - azul
 // 1A1A1A - chumbo
+// 484E53 - cinza-escuro (titulos e etc no claro)

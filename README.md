@@ -7,10 +7,11 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 
 ## TODO
 
-- [ ] Temas
+- [x] Temas
 - [ ] Header e Footer
 - [ ] Página principal
 - [ ] Página de detalhes do projeto
+- [ ] Versão desktop
 - [ ] Blog
 
 ## Principais Tecnologias Utilizadas
