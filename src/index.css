@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 :root {
-  background-color: #1E1E1E;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.dark {
+  background-color: #1E1E1E;
+}
+
+.light {
+  background-color: #E0E8F6;
 }

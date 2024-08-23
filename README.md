@@ -7,9 +7,8 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 
 ## TODO
 
-- [ ] Layout
+- [ ] Temas
 - [ ] Header e Footer
-- [ ] Principais componentes de UI
 - [ ] Página principal
 - [ ] Página de detalhes do projeto
 - [ ] Blog
