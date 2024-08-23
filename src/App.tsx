@@ -1,5 +1,7 @@
+import Home from "./pages/home"
+
 function App() {
-  return <h1 className="text-xl font-bold">Hello World!</h1>
+  return <Home />
 }
 
 export default App
