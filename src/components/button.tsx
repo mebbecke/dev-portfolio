@@ -8,7 +8,7 @@ const buttonVariants = tv({
       primary:
         "text-white dark:border dark:border-solid dark:border-sky border-none bg-sky dark:bg-transparent",
       secondary:
-        "dark:text-gray-300 text-sky border-2 border-solid dark:border-gray-600 border-sky",
+        "dark:text-gray-300 dark:text-sky text-darkGray border-darkGray border border-solid dark:border-gray-600",
       ghost: "dark:text-white border-none",
       social:
         "dark:text-gray-400 text-darkGray border-2 dark:border-gray-600 border-darkGray p-2",

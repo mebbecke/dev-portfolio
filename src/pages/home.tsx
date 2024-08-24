@@ -21,7 +21,7 @@ const Home = () => {
           <h1 className="font-poppins text-4xl font-bold tracking-tight text-darkGray dark:text-white">
             Marina Ebbecke
           </h1>
-          <GradientSubtitle className="font-poppins">
+          <GradientSubtitle className="font-poppins text-lg">
             Desenvolvedora web
           </GradientSubtitle>
         </div>
@@ -155,6 +155,38 @@ const Home = () => {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* CONTATO */}
+      <section className="flex flex-col items-center space-y-8">
+        <div className="flex flex-col items-center">
+          <SectionTitle>Contato</SectionTitle>
+          <GradientSubtitle>Me envie uma mensagem</GradientSubtitle>
+        </div>
+
+        {/* Formulário de contato */}
+        <form className="flex w-full flex-col space-y-3 text-darkPurple dark:text-white">
+          <label htmlFor="name" className="text-sm font-semibold">
+            Nome
+          </label>
+          <input id="name" type="text" name="name" />
+          <label htmlFor="email" className="text-sm font-semibold">
+            Email
+          </label>
+          <input id="email" type="email" name="email" />
+          <label htmlFor="message" className="text-sm font-semibold">
+            Mensagem
+          </label>
+          <textarea id="message" name="message" />
+          <Button variant="secondary">Enviar mensagem</Button>
+        </form>
+
+        <div className="flex flex-row gap-1 rounded-xl border-2 border-darkGray p-3">
+          <img src="Gmail.svg" alt="Gmail" />
+          <p className="text-sm text-darkGray dark:text-gray-400">
+            m.ebbecke@gmail.com
+          </p>
+        </div>
       </section>
     </main>
   )

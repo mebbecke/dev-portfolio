@@ -11,6 +11,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input {
+  background: none;
+  border: 1px solid #484E53;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: small;
+
+  &:focus {
+    outline: none;
+  }
+
+  .dark & {
+    border-color: #D6DDED;
+  }
+} 
+
+textarea {
+  resize: none;
+  background: none;
+  border: 1px solid #484E53;
+  border-radius: 10px;
+  padding: 0.75rem;
+  height: 140px;
+  font-size: small;
+
+  &:focus {
+    outline: none;
+  }
+
+  .dark & {
+    border-color: #D6DDED;
+  }
+}
 
 .dark {
   background-color: #1E1E1E;
