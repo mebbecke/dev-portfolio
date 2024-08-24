@@ -1,3 +1,9 @@
+export type Tech = {
+  name: string
+  icon: string
+  category: string
+}
+
 export const techs = [
   {
     status: "using",

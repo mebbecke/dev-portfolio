@@ -2,6 +2,8 @@ import { Button } from "../components/button"
 import GradientSubtitle from "../components/gradient-subtitle"
 import SectionTitle from "../components/section-title"
 import { techs } from "../constants/techs"
+import { projects } from "../constants/projects"
+import { ArrowUpRight } from "lucide-react"
 
 const Home = () => {
   return (
@@ -115,6 +117,42 @@ const Home = () => {
           <SectionTitle>Projetos</SectionTitle>
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
         </div>
+
+        {projects.map((project) => (
+          <div key={project.title} className="flex flex-col space-y-4">
+            <figure>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="rounded-xl"
+              />
+            </figure>
+            <h3 className="text-lg font-semibold text-darkGray dark:text-lightGray">
+              {project.title}
+            </h3>
+            <p className="text-darkPurple dark:text-lightGray">
+              {project.description}
+            </p>
+
+            <div className="flex flex-row items-end justify-between">
+              <div className="flex flex-row gap-2">
+                {project.techs.map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs text-plumber dark:text-gray-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <Button size="small">
+                <a href={project.link}>
+                  <ArrowUpRight size={20} />
+                </a>
+              </Button>
+            </div>
+          </div>
+        ))}
       </section>
     </main>
   )
