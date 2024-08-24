@@ -1,9 +1,9 @@
 import { Button } from "../components/button"
 import GradientSubtitle from "../components/gradient-subtitle"
 import SectionTitle from "../components/section-title"
-import { techs } from "../constants/techs"
 import { projects } from "../constants/projects"
 import { ArrowUpRight } from "lucide-react"
+import { techs } from "../constants/techs"
 
 const Home = () => {
   return (
@@ -73,40 +73,42 @@ const Home = () => {
             Usando atualmente
           </h3>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
-            {techs
-              .find((tech) => tech.status === "using")
-              ?.techs.map((tech) => (
-                <figure
-                  key={tech.name}
-                  className="flex flex-col items-center space-y-1"
-                >
-                  <div className="relative h-14 w-14">
-                    <img src={tech.icon} alt={tech.name} />
-                  </div>
-                  {/* <figcaption className="text-xs dark:text-lightGray">
-                    {tech.name}
-                  </figcaption> */}
-                </figure>
-              ))}
+            {techs.map(
+              (tech) =>
+                tech.status === "using" && (
+                  <figure
+                    key={tech.name}
+                    className="flex flex-col items-center space-y-1"
+                  >
+                    <div className="relative h-14 w-14">
+                      <img src={tech.icon} alt={tech.name} />
+                    </div>
+                    {/* <figcaption className="text-xs dark:text-lightGray">
+			                {tech.name}
+		                </figcaption> */}
+                  </figure>
+                ),
+            )}
           </div>
 
           <h3 className="text-darkPurple dark:text-lightGray">Estudando</h3>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
-            {techs
-              .find((tech) => tech.status === "learning")
-              ?.techs.map((tech) => (
-                <figure
-                  key={tech.name}
-                  className="flex flex-col items-center space-y-1"
-                >
-                  <div className="relative h-14 w-14">
-                    <img src={tech.icon} alt={tech.name} />
-                  </div>
-                  {/* <figcaption className="text-xs dark:text-lightGray">
-                    {tech.name}
-                  </figcaption> */}
-                </figure>
-              ))}
+            {techs.map(
+              (tech) =>
+                tech.status === "learning" && (
+                  <figure
+                    key={tech.name}
+                    className="flex flex-col items-center space-y-1"
+                  >
+                    <div className="relative h-14 w-14">
+                      <img src={tech.icon} alt={tech.name} />
+                    </div>
+                    {/* <figcaption className="text-xs dark:text-lightGray">
+			                {tech.name}
+		                </figcaption> */}
+                  </figure>
+                ),
+            )}
           </div>
         </div>
       </section>

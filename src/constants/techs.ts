@@ -2,27 +2,68 @@ export type Tech = {
   name: string
   icon: string
   category: string
+  status: string
 }
 
-export const techs = [
+export const techs: Tech[] = [
   {
+    name: "JavaScript",
+    icon: "/JavaScript.svg",
+    category: "frontend",
     status: "using",
-    techs: [
-      { name: "JavaScript", icon: "/JavaScript.svg" },
-      { name: "TypeScript", icon: "/TypeScript.svg" },
-      { name: "React", icon: "/React.svg" },
-      { name: "TailwindCSS", icon: "/TailwindCSS.svg" },
-      { name: "Node.js", icon: "/Nodejs.svg" },
-      { name: "Git", icon: "/Git.svg" },
-    ],
   },
   {
+    name: "TypeScript",
+    icon: "/TypeScript.svg",
+    category: "frontend",
+    status: "using",
+  },
+  {
+    name: "React",
+    icon: "/React.svg",
+    category: "frontend",
+    status: "using",
+  },
+  {
+    name: "TailwindCSS",
+    icon: "/TailwindCSS.svg",
+    category: "frontend",
+    status: "using",
+  },
+  {
+    name: "Node.js",
+    icon: "/Nodejs.svg",
+    category: "backend",
+    status: "using",
+  },
+  {
+    name: "Git",
+    icon: "/Git.svg",
+    category: "tools",
+    status: "using",
+  },
+  {
+    name: "Express",
+    icon: "/Express.svg",
+    category: "backend",
     status: "learning",
-    techs: [
-      { name: "Express", icon: "/Express.svg" },
-      { name: "Next.js", icon: "/Nextjs.svg" },
-      { name: "PostgreSQL", icon: "/PostgreSQL.svg" },
-      { name: "Docker", icon: "/Docker.svg" },
-    ],
+  },
+  {
+    name: "Next.js",
+    icon: "/Nextjs.svg",
+    category: "frontend",
+    status: "learning",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/PostgreSQL.svg",
+    category: "backend",
+    status: "learning",
+  },
+  {
+    name: "Docker",
+    icon: "/Docker.svg",
+    category: "tools",
+    status: "learning",
   },
 ]
