@@ -1,15 +1,21 @@
 import { Button } from "../components/button"
-import GradientSubtitle from "../components/gradient-subtitle"
 import SectionTitle from "../components/section-title"
+import GradientSubtitle from "../components/gradient-subtitle"
 import { projects } from "../constants/projects"
-import { ArrowUpRight } from "lucide-react"
 import { techs } from "../constants/techs"
+import { ArrowUpRight } from "lucide-react"
+
+// TODO:
+// [] Escrever textos
+// [] Estruturar 1 projeto
+// [] Implementar formulário de contato
+// [] Botão do menu fixado?
 
 const Home = () => {
   return (
     <main className="space-y-24">
       {/* HERO */}
-      <section className="flex flex-col items-center space-y-8">
+      <section id="hero" className="flex flex-col items-center space-y-8">
         <div className="relative h-[197px] w-[202px] rounded-full">
           <img
             src="/images/hero.jpg"
@@ -36,7 +42,7 @@ const Home = () => {
       </section>
 
       {/* SOBRE MIM */}
-      <section className="flex flex-col items-center space-y-8">
+      <section id="about" className="flex flex-col items-center space-y-8">
         <SectionTitle>Sobre mim</SectionTitle>
         <div className="space-y-8 text-center text-darkPurple dark:text-lightGray">
           <p>
@@ -62,7 +68,7 @@ const Home = () => {
       </section>
 
       {/* TECNOLOGIAS */}
-      <section className="flex flex-col items-center space-y-8">
+      <section id="techs" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Tecnologias</SectionTitle>
           <GradientSubtitle>Minha stack</GradientSubtitle>
@@ -114,7 +120,7 @@ const Home = () => {
       </section>
 
       {/* PROJETOS */}
-      <section className="flex flex-col items-center space-y-8">
+      <section id="projects" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Projetos</SectionTitle>
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
@@ -158,7 +164,7 @@ const Home = () => {
       </section>
 
       {/* CONTATO */}
-      <section className="flex flex-col items-center space-y-8">
+      <section id="contact" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Contato</SectionTitle>
           <GradientSubtitle>Me envie uma mensagem</GradientSubtitle>

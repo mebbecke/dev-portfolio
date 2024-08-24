@@ -5,7 +5,7 @@ import * as Dialog from "@radix-ui/react-dialog"
 
 // TODO:
 // [x] Sidebar da versão mobile
-// [] Links para as seções
+// [x] Links para as seções
 // [] Download do CV
 
 const Header = () => {
@@ -33,12 +33,22 @@ const Header = () => {
               </Dialog.Close>
             </div>
             <nav className="border-y border-y-gray-400 p-6 dark:border-y-darkGray">
-              <ul className="space-y-4 text-gray-800 dark:text-white">
-                <li>Sobre</li>
-                <li>Tecnologias</li>
-                <li>Projetos</li>
-                <li>Contato</li>
-              </ul>
+              <Dialog.Close>
+                <ul className="space-y-4 text-start text-gray-800 dark:text-white">
+                  <li>
+                    <a href="#about">Sobre</a>
+                  </li>
+                  <li>
+                    <a href="#techs">Tecnologias</a>
+                  </li>
+                  <li>
+                    <a href="#projects">Projetos</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contato</a>
+                  </li>
+                </ul>
+              </Dialog.Close>
             </nav>
             <div className="flex justify-center p-6">
               <Button variant="primary" size="full">
