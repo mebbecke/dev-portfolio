@@ -1,9 +1,11 @@
 import { Button } from "../components/button"
+import GradientSubtitle from "../components/gradient-subtitle"
 import { techs } from "../constants/techs"
 
 const Home = () => {
   return (
     <main className="space-y-24">
+      {/* HERO */}
       <section className="flex flex-col items-center space-y-8">
         <div className="relative h-[197px] w-[202px] rounded-full">
           <img
@@ -16,9 +18,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold tracking-tight text-darkGray dark:text-white">
             Marina Ebbecke
           </h1>
-          <p className="bg-gradient-to-r from-sky to-darkGray bg-clip-text text-lg font-semibold text-transparent dark:to-white">
-            Desenvolvedora web
-          </p>
+          <GradientSubtitle>Desenvolvedora web</GradientSubtitle>
         </div>
         <p className="text-center text-darkGray dark:text-lightGray">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi hic
@@ -29,6 +29,8 @@ const Home = () => {
           <a href="mailto:m.ebbecke@gmail.com">Fale comigo</a>
         </Button>
       </section>
+
+      {/* SOBRE MIM */}
       <section className="flex flex-col items-center space-y-8">
         <h2 className="text-3xl font-bold text-darkGray dark:text-white">
           Sobre mim
@@ -55,16 +57,16 @@ const Home = () => {
         </div>
         <Button variant="primary">Baixar meu currículo</Button>
       </section>
+
+      {/* TECNOLOGIAS */}
       <section className="flex flex-col items-center space-y-8">
         <h2 className="text-3xl font-bold text-darkGray dark:text-white">
           Tecnologias
         </h2>
 
-        {/* ÍCONES DAS TECHS */}
+        {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
-          <h3 className="bg-gradient-to-r from-sky to-darkGray bg-clip-text text-lg font-semibold text-transparent dark:to-white">
-            Usando atualmente
-          </h3>
+          <GradientSubtitle>Usando atualmente</GradientSubtitle>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
             {techs
               .find((tech) => tech.status === "using")
@@ -83,9 +85,7 @@ const Home = () => {
               ))}
           </div>
 
-          <h3 className="bg-gradient-to-r from-sky to-darkGray bg-clip-text text-lg font-semibold text-transparent dark:to-white">
-            Estudando
-          </h3>
+          <GradientSubtitle>Estudando</GradientSubtitle>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
             {techs
               .find((tech) => tech.status === "learning")
