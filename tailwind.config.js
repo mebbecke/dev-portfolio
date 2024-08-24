@@ -13,6 +13,7 @@ export default {
         sky: "#4FC3F7", // primary
         darkGray: "#484E53", // titles
         lightGray: "#E1E1E1", // dark mode text
+        darkPurple: "#1C1E53", // light mode text
       },
       backgroundImage: {
         pattern: "url(/images/bg.png)",

@@ -8,7 +8,7 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 ## TODO
 
 - [x] Temas
-- [ ] Header e Footer
+- [x] Header e Footer
 - [ ] Página principal
 - [ ] Página de detalhes do projeto
 - [ ] Versão desktop

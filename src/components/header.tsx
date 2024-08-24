@@ -10,7 +10,7 @@ import * as Dialog from "@radix-ui/react-dialog"
 
 const Header = () => {
   return (
-    <div className="flex flex-row items-center justify-between px-8 py-6">
+    <header className="flex flex-row items-center justify-between px-8 py-6">
       <h1 className="light:text-black text-2xl font-bold dark:text-white">
         Marina
       </h1>
@@ -48,7 +48,7 @@ const Header = () => {
           </Dialog.Content>
         </Dialog.Root>
       </div>
-    </div>
+    </header>
   )
 }
 

@@ -16,7 +16,7 @@ const buttonVariants = tv({
 
     // TODO: configurar variantes de tamanho
     size: {
-      default: "text-base w-40",
+      default: "text-base min-w-40 px-6",
       small: "text-sm",
       full: "w-full",
     },
