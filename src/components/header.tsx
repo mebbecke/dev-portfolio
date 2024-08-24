@@ -11,8 +11,8 @@ import * as Dialog from "@radix-ui/react-dialog"
 const Header = () => {
   return (
     <header className="flex flex-row items-center justify-between px-8 py-6">
-      <h1 className="light:text-black text-2xl font-bold dark:text-white">
-        Marina
+      <h1 className="light:text-black font-poppins text-2xl font-bold dark:text-white">
+        m.e.
       </h1>
       <div className="flex flex-row items-center gap-3">
         <ThemeToggleButton />
@@ -25,8 +25,8 @@ const Header = () => {
           <Dialog.Overlay className="fixed inset-0 z-40 bg-black opacity-30" />
           <Dialog.Content className="fixed bottom-0 right-0 top-0 z-50 flex w-80 flex-col bg-ice dark:bg-plumber lg:w-96">
             <div className="flex flex-row items-center justify-between p-6">
-              <Dialog.Title className="text-2xl font-bold dark:text-white">
-                Marina
+              <Dialog.Title className="font-poppins text-2xl font-bold dark:text-white">
+                m.e.
               </Dialog.Title>
               <Dialog.Close className="flex w-full justify-end">
                 <X className="dark:text-white" />

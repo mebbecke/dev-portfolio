@@ -16,12 +16,14 @@ const Home = () => {
           />
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-bold tracking-tight text-darkGray dark:text-white">
+          <h1 className="font-poppins text-4xl font-bold tracking-tight text-darkGray dark:text-white">
             Marina Ebbecke
           </h1>
-          <GradientSubtitle>Desenvolvedora web</GradientSubtitle>
+          <GradientSubtitle className="font-poppins">
+            Desenvolvedora web
+          </GradientSubtitle>
         </div>
-        <p className="text-center text-darkGray dark:text-lightGray">
+        <p className="text-center font-poppins text-darkGray dark:text-lightGray">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi hic
           unde nesciunt ad modi illum pariatur quidem eum, mollitia qui itaque
           commodi harum beatae accusantium nihil eius ut! Eius, facilis!
@@ -109,7 +111,10 @@ const Home = () => {
 
       {/* PROJETOS */}
       <section className="flex flex-col items-center space-y-8">
-        <SectionTitle>Projetos</SectionTitle>
+        <div className="flex flex-col items-center">
+          <SectionTitle>Projetos</SectionTitle>
+          <GradientSubtitle>Meus trabalhos</GradientSubtitle>
+        </div>
       </section>
     </main>
   )
