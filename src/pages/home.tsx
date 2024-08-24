@@ -1,4 +1,5 @@
 import { Button } from "../components/button"
+import { techs } from "../constants/techs"
 
 const Home = () => {
   return (
@@ -53,6 +54,56 @@ const Home = () => {
           </p>
         </div>
         <Button variant="primary">Baixar meu currículo</Button>
+      </section>
+      <section className="flex flex-col items-center space-y-8">
+        <h2 className="text-3xl font-bold text-darkGray dark:text-white">
+          Tecnologias
+        </h2>
+
+        {/* ÍCONES DAS TECHS */}
+        <div className="flex flex-col items-center space-y-8">
+          <h3 className="bg-gradient-to-r from-sky to-darkGray bg-clip-text text-lg font-semibold text-transparent dark:to-white">
+            Usando atualmente
+          </h3>
+          <div className="grid grid-cols-3 flex-row items-center gap-6">
+            {techs
+              .find((tech) => tech.status === "using")
+              ?.techs.map((tech) => (
+                <figure
+                  key={tech.name}
+                  className="flex flex-col items-center space-y-1"
+                >
+                  <div className="relative h-14 w-14">
+                    <img src={tech.icon} alt={tech.name} />
+                  </div>
+                  {/* <figcaption className="text-xs dark:text-lightGray">
+                    {tech.name}
+                  </figcaption> */}
+                </figure>
+              ))}
+          </div>
+
+          <h3 className="bg-gradient-to-r from-sky to-darkGray bg-clip-text text-lg font-semibold text-transparent dark:to-white">
+            Estudando
+          </h3>
+          <div className="grid grid-cols-3 flex-row items-center gap-6">
+            {techs
+              .find((tech) => tech.status === "learning")
+              ?.techs.map((tech) => (
+                <figure
+                  key={tech.name}
+                  className="flex flex-col items-center space-y-1"
+                >
+                  <div className="relative h-14 w-14">
+                    <img src={tech.icon} alt={tech.name} />
+                  </div>
+                  {/* <figcaption className="text-xs dark:text-lightGray">
+                    {tech.name}
+                  </figcaption> */}
+                </figure>
+              ))}
+          </div>
+        </div>
       </section>
     </main>
   )

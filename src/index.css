@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-} */
+:root {
+  font-family: "Poppins", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 .dark {
   background-color: #1E1E1E;
