@@ -1,5 +1,6 @@
 import { Button } from "../components/button"
 import GradientSubtitle from "../components/gradient-subtitle"
+import SectionTitle from "../components/section-title"
 import { techs } from "../constants/techs"
 
 const Home = () => {
@@ -32,9 +33,7 @@ const Home = () => {
 
       {/* SOBRE MIM */}
       <section className="flex flex-col items-center space-y-8">
-        <h2 className="text-3xl font-bold text-darkGray dark:text-white">
-          Sobre mim
-        </h2>
+        <SectionTitle>Sobre mim</SectionTitle>
         <div className="space-y-8 text-center text-darkPurple dark:text-lightGray">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
@@ -60,13 +59,15 @@ const Home = () => {
 
       {/* TECNOLOGIAS */}
       <section className="flex flex-col items-center space-y-8">
-        <h2 className="text-3xl font-bold text-darkGray dark:text-white">
-          Tecnologias
-        </h2>
-
+        <div className="flex flex-col items-center">
+          <SectionTitle>Tecnologias</SectionTitle>
+          <GradientSubtitle>Minha stack</GradientSubtitle>
+        </div>
         {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
-          <GradientSubtitle>Usando atualmente</GradientSubtitle>
+          <h3 className="text-darkPurple dark:text-lightGray">
+            Usando atualmente
+          </h3>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
             {techs
               .find((tech) => tech.status === "using")
@@ -85,7 +86,7 @@ const Home = () => {
               ))}
           </div>
 
-          <GradientSubtitle>Estudando</GradientSubtitle>
+          <h3 className="text-darkPurple dark:text-lightGray">Estudando</h3>
           <div className="grid grid-cols-3 flex-row items-center gap-6">
             {techs
               .find((tech) => tech.status === "learning")
@@ -104,6 +105,11 @@ const Home = () => {
               ))}
           </div>
         </div>
+      </section>
+
+      {/* PROJETOS */}
+      <section className="flex flex-col items-center space-y-8">
+        <SectionTitle>Projetos</SectionTitle>
       </section>
     </main>
   )
