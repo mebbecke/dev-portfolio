@@ -18,6 +18,7 @@ const buttonVariants = tv({
     size: {
       default: "text-base w-40",
       small: "text-sm",
+      full: "w-full",
     },
   },
 

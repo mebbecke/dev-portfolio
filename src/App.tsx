@@ -1,11 +1,14 @@
 import Layout from "./components/layout"
+import { ThemeProvider } from "./contexts/theme-context"
 import Home from "./pages/home"
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <Home />
+      </Layout>
+    </ThemeProvider>
   )
 }
 
