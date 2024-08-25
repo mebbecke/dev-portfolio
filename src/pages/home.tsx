@@ -6,9 +6,9 @@ import { techs } from "../constants/techs"
 import { ArrowUpRight } from "lucide-react"
 
 // TODO:
-// [] Escrever textos
-// [] Estruturar 1 projeto
+// [x] Escrever textos
 // [] Implementar formulário de contato
+// [] Estruturar 1 projeto
 // [] Botão do menu fixado?
 
 const Home = () => {
@@ -31,40 +31,48 @@ const Home = () => {
             Desenvolvedora web
           </GradientSubtitle>
         </div>
-        <p className="text-center font-poppins text-darkGray dark:text-lightGray">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi hic
-          unde nesciunt ad modi illum pariatur quidem eum, mollitia qui itaque
-          commodi harum beatae accusantium nihil eius ut! Eius, facilis!
+        <p className="text-center font-poppins leading-loose text-darkGray dark:text-lightGray">
+          Desenvolvedora web apaixonada por aprender e trilhando o caminho para
+          se tornar fullstack. Não tenho medo de novos desafios e vejo neles
+          ótimas oportunidades para aprimorar meu conhecimento.
         </p>
-        <Button variant="primary">
-          <a href="mailto:m.ebbecke@gmail.com">Fale comigo</a>
-        </Button>
+        <Button variant="primary">Baixar meu currículo</Button>
       </section>
 
       {/* SOBRE MIM */}
       <section id="about" className="flex flex-col items-center space-y-8">
         <SectionTitle>Sobre mim</SectionTitle>
         <div className="space-y-8 text-center text-darkPurple dark:text-lightGray">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            obcaecati impedit aspernatur neque velit nulla voluptatibus officia
-            praesentium nam. Numquam labore, mollitia iusto esse assumenda
-            voluptatum iste! Voluptates, dolorem odit.
+          <p className="text-sm">
+            Olá, sou desenvolvedora de software e estudante de Análise e
+            Desenvolvimento de Sistemas, buscando me tornar desenvolvedora
+            fullstack. Atualmente estou trabalhando como desenvolvedora
+            frontend, desenvolvendo interfaces acessíveis, escaláveis e
+            amigáveis ao usuário. Curiosamente, meu primeiro contato com o
+            desenvolvimento web foi ainda criança, quando criava páginas usando
+            HTML e CSS para mostrar meus desenhos e quadrinhos sobre jogos que
+            eu jogava na época.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            obcaecati impedit aspernatur neque velit nulla voluptatibus officia
-            praesentium nam. Numquam labore, mollitia iusto esse assumenda
-            voluptatum iste! Voluptates, dolorem odit.
+          <p className="text-sm">
+            Sou movida pela resolução de problemas e gosto de entender o
+            funcionamento das coisas, e por isso, amo estudar, fazer anotações e
+            buscar novos projetos para colocar o estudo em prática. Me considero
+            perfeccionista, então estou sempre buscando melhorar e aprimorar meu
+            código. Trabalhei por mais de 10 anos na área cultural como
+            musicista e educadora musical, e isso me trouxe habilidades de
+            comunicação, organização e principalmente a disciplina, que
+            considero muito importante para o trabalho com tecnologia.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            obcaecati impedit aspernatur neque velit nulla voluptatibus officia
-            praesentium nam. Numquam labore, mollitia iusto esse assumenda
-            voluptatum iste! Voluptates, dolorem odit.
+          <p className="text-sm">
+            No meu tempo livre, gosto de jogar no computador (principalmente
+            Fortnite), sair com amigos ou estudar algum assunto de interesse.
+            Fique à vontade para me procurar em minhas redes ou e-mail. Vamos
+            conversar!
           </p>
         </div>
-        <Button variant="primary">Baixar meu currículo</Button>
+        <Button variant="primary">
+          <a href="mailto:m.ebbecke@gmail.com">Fale comigo</a>
+        </Button>
       </section>
 
       {/* TECNOLOGIAS */}
