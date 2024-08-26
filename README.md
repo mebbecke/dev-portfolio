@@ -1,7 +1,9 @@
 # Portfolio de Desenvolvedora de Software
 
 Este é o meu portfolio, onde compartilharei os projetos pessoais que desenvolvi na minha carreira como desenvolvedora.
-O design foi feito por Mkolwey ([link para o Figma](https://www.figma.com/community/file/1372166977051146645/designer-developer-portfolio))
+O design foi feito por Mkolwey ([link para o Figma](https://www.figma.com/community/file/1372166977051146645/designer-developer-portfolio)).
+
+Acesse o site através [deste link](https://vercel.com/mebbeckes-projects/dev-portfolio/deployments).
 
 No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas na seção abaixo!
 
@@ -20,7 +22,7 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 - React
 - TailwindCSS
 
-## Como Rodar o Projeto
+## Como Rodar o Projeto localmente
 
 1. Clone este repositório para o seu ambiente local.
 2. Certifique-se de ter o NodeJS instalado em sua máquina.

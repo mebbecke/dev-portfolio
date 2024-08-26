@@ -3,7 +3,8 @@ import SectionTitle from "../components/section-title"
 import GradientSubtitle from "../components/gradient-subtitle"
 import { projects } from "../constants/projects"
 import { techs } from "../constants/techs"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, BookOpenText, Briefcase } from "lucide-react"
+import GradientBox from "../components/gradient-box"
 
 // TODO:
 // [x] Escrever textos
@@ -81,49 +82,62 @@ const Home = () => {
           <SectionTitle>Tecnologias</SectionTitle>
           <GradientSubtitle>Minha stack</GradientSubtitle>
         </div>
+
         {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
-          <h3 className="text-darkPurple dark:text-lightGray">
-            Usando atualmente
-          </h3>
-          <div className="grid grid-cols-3 flex-row items-center gap-6">
-            {techs.map(
-              (tech) =>
-                tech.status === "using" && (
-                  <figure
-                    key={tech.name}
-                    className="flex flex-col items-center space-y-1"
-                  >
-                    <div className="relative h-14 w-14">
-                      <img src={tech.icon} alt={tech.name} />
-                    </div>
-                    {/* <figcaption className="text-xs dark:text-lightGray">
+          <GradientBox className="space-y-4">
+            <div className="w-12 rounded-lg bg-[#F5F8FF] p-3 text-[#1a1a1a]">
+              <Briefcase />
+            </div>
+            <h3 className="font-semibold text-darkPurple dark:text-white">
+              Usando atualmente
+            </h3>
+            <div className="grid grid-cols-3 items-center gap-6">
+              {techs.map(
+                (tech) =>
+                  tech.status === "using" && (
+                    <figure
+                      key={tech.name}
+                      className="flex flex-col items-center space-y-1"
+                    >
+                      <div className="relative h-14 w-14">
+                        <img src={tech.icon} alt={tech.name} />
+                      </div>
+                      {/* <figcaption className="text-xs dark:text-lightGray">
 			                {tech.name}
 		                </figcaption> */}
-                  </figure>
-                ),
-            )}
-          </div>
+                    </figure>
+                  ),
+              )}
+            </div>
+          </GradientBox>
 
-          <h3 className="text-darkPurple dark:text-lightGray">Estudando</h3>
-          <div className="grid grid-cols-3 flex-row items-center gap-6">
-            {techs.map(
-              (tech) =>
-                tech.status === "learning" && (
-                  <figure
-                    key={tech.name}
-                    className="flex flex-col items-center space-y-1"
-                  >
-                    <div className="relative h-14 w-14">
-                      <img src={tech.icon} alt={tech.name} />
-                    </div>
-                    {/* <figcaption className="text-xs dark:text-lightGray">
+          <GradientBox className="space-y-4">
+            <div className="w-12 rounded-lg bg-[#F5F8FF] p-3 text-[#1a1a1a]">
+              <BookOpenText />
+            </div>
+            <h3 className="font-semibold text-darkPurple dark:text-white">
+              Estudando
+            </h3>
+            <div className="grid grid-cols-3 items-center gap-6">
+              {techs.map(
+                (tech) =>
+                  tech.status === "learning" && (
+                    <figure
+                      key={tech.name}
+                      className="flex flex-col items-center space-y-1"
+                    >
+                      <div className="relative h-14 w-14">
+                        <img src={tech.icon} alt={tech.name} />
+                      </div>
+                      {/* <figcaption className="text-xs dark:text-lightGray">
 			                {tech.name}
 		                </figcaption> */}
-                  </figure>
-                ),
-            )}
-          </div>
+                    </figure>
+                  ),
+              )}
+            </div>
+          </GradientBox>
         </div>
       </section>
 
