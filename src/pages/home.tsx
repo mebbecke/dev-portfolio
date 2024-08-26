@@ -86,10 +86,10 @@ const Home = () => {
         {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
           <GradientBox className="space-y-4">
-            <div className="w-12 rounded-lg bg-[#F5F8FF] p-3 text-[#1a1a1a]">
+            <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
               <Briefcase />
             </div>
-            <h3 className="font-semibold text-darkPurple dark:text-white">
+            <h3 className="font-semibold text-darkGray dark:text-white">
               Usando atualmente
             </h3>
             <div className="grid grid-cols-3 items-center gap-6">
@@ -113,10 +113,10 @@ const Home = () => {
           </GradientBox>
 
           <GradientBox className="space-y-4">
-            <div className="w-12 rounded-lg bg-[#F5F8FF] p-3 text-[#1a1a1a]">
+            <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
               <BookOpenText />
             </div>
-            <h3 className="font-semibold text-darkPurple dark:text-white">
+            <h3 className="font-semibold text-darkGray dark:text-white">
               Estudando
             </h3>
             <div className="grid grid-cols-3 items-center gap-6">

@@ -9,7 +9,7 @@ const SectionTitle = ({ children, className }: SectionTitleProps) => {
   return (
     <div className="flex flex-col items-center space-y-4">
       <button onClick={() => scrollTo({ top: 0, behavior: "smooth" })}>
-        <ChevronUp size={20} className="text-darkGray dark:text-white" />
+        <ChevronUp size={25} className="text-darkGray dark:text-white" />
       </button>
       <h2
         className={`text-3xl font-bold text-darkGray dark:text-white ${className}`}
