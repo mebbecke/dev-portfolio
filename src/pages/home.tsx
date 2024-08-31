@@ -44,21 +44,20 @@ const Home = () => {
         </Button>
       </section>
 
-      {/* SOBRE MIM */}
+      {/* ABOUT */}
       <section id="about" className="flex flex-col items-center space-y-8">
         <SectionTitle>Sobre mim</SectionTitle>
-        <div className="space-y-8 text-center text-darkPurple dark:text-lightGray">
-          <p className="text-sm">
+        <div className="space-y-8 text-center text-base text-darkPurple dark:text-lightGray">
+          <p>
             Olá, sou desenvolvedora de software e estudante de Análise e
             Desenvolvimento de Sistemas, buscando me tornar desenvolvedora
-            fullstack. Atualmente estou trabalhando como desenvolvedora
-            frontend, desenvolvendo interfaces acessíveis, escaláveis e
-            amigáveis ao usuário. Curiosamente, meu primeiro contato com o
-            desenvolvimento web foi ainda criança, quando criava páginas usando
-            HTML e CSS para mostrar meus desenhos e quadrinhos sobre jogos que
-            eu jogava na época.
+            fullstack. Atualmente estou trabalhando como frontend, criando
+            interfaces acessíveis, escaláveis e amigáveis ao usuário.
+            Curiosamente, meu primeiro contato com o desenvolvimento web foi
+            ainda criança, quando criava páginas usando HTML e CSS para mostrar
+            meus desenhos e quadrinhos sobre jogos que eu jogava na época.
           </p>
-          <p className="text-sm">
+          <p>
             Sou movida pela resolução de problemas e gosto de entender o
             funcionamento das coisas, e por isso, amo estudar, fazer anotações e
             buscar novos projetos para colocar o estudo em prática. Me considero
@@ -68,7 +67,7 @@ const Home = () => {
             comunicação, organização e principalmente a disciplina, que
             considero muito importante para o trabalho com tecnologia.
           </p>
-          <p className="text-sm">
+          <p>
             No meu tempo livre, gosto de jogar no computador (principalmente
             Fortnite), sair com amigos ou estudar algum assunto de interesse.
             Fique à vontade para me procurar em minhas redes ou e-mail. Vamos
@@ -80,7 +79,7 @@ const Home = () => {
         </Button>
       </section>
 
-      {/* TECNOLOGIAS */}
+      {/* SKILLS */}
       <section id="techs" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Tecnologias</SectionTitle>
@@ -90,12 +89,14 @@ const Home = () => {
         {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
           <GradientBox className="space-y-4">
-            <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
-              <Briefcase />
+            <div className="flex flex-row items-center gap-3">
+              <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
+                <Briefcase />
+              </div>
+              <h3 className="font-semibold text-darkGray dark:text-white">
+                Usando atualmente
+              </h3>
             </div>
-            <h3 className="font-semibold text-darkGray dark:text-white">
-              Usando atualmente
-            </h3>
             <div className="grid grid-cols-3 items-center gap-6">
               {techs.map(
                 (tech) =>
@@ -117,12 +118,14 @@ const Home = () => {
           </GradientBox>
 
           <GradientBox className="space-y-4">
-            <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
-              <BookOpenText />
+            <div className="flex flex-row items-center gap-3">
+              <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
+                <BookOpenText />
+              </div>
+              <h3 className="font-semibold text-darkGray dark:text-white">
+                Estudando
+              </h3>
             </div>
-            <h3 className="font-semibold text-darkGray dark:text-white">
-              Estudando
-            </h3>
             <div className="grid grid-cols-3 items-center gap-6">
               {techs.map(
                 (tech) =>
@@ -145,7 +148,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PROJETOS */}
+      {/* PROJECTS */}
       <section id="projects" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Projetos</SectionTitle>
@@ -189,7 +192,7 @@ const Home = () => {
         ))}
       </section>
 
-      {/* CONTATO */}
+      {/* CONTACT */}
       <section id="contact" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Contato</SectionTitle>
