@@ -17,22 +17,4 @@ export const projects: ProjectProps[] = [
     githubUrl: "https://github.com/mebbecke/dev-portfolio",
     techs: ["React", "TypeScript", "TailwindCSS"],
   },
-  {
-    title: "Projeto 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati impedit aspernatur neque velit nulla voluptatibus officia praesentium nam. Numquam labore, mollitia iusto esse assumenda voluptatum iste! Voluptates, dolorem odit.",
-    image: "/images/project-2.jpg",
-    websiteUrl: "#",
-    githubUrl: "#",
-    techs: ["Node.js", "Express", "TypeScript"],
-  },
-  {
-    title: "Projeto 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati impedit aspernatur neque velit nulla voluptatibus officia praesentium nam. Numquam labore, mollitia iusto esse assumenda voluptatum iste! Voluptates, dolorem odit.",
-    image: "/images/project-3.jpg",
-    websiteUrl: "#",
-    githubUrl: "#",
-    techs: ["JavaScript", "HTML5", "CSS3"],
-  },
 ]

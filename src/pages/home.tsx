@@ -211,15 +211,15 @@ const Home = () => {
           <label htmlFor="name" className="text-sm font-semibold">
             Nome
           </label>
-          <input id="name" type="text" name="name" />
+          <input id="name" type="text" name="name" placeholder="Em breve" />
           <label htmlFor="email" className="text-sm font-semibold">
             Email
           </label>
-          <input id="email" type="email" name="email" />
+          <input id="email" type="email" name="email" placeholder="Em breve" />
           <label htmlFor="message" className="text-sm font-semibold">
             Mensagem
           </label>
-          <textarea id="message" name="message" />
+          <textarea id="message" name="message" placeholder="Em breve" />
           <Button variant="secondary">Enviar mensagem</Button>
         </form>
 
