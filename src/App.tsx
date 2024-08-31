@@ -1,12 +1,20 @@
-import Layout from "./components/layout"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { ThemeProvider } from "./contexts/theme-context"
+import Layout from "./components/layout"
 import Home from "./pages/home"
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+])
 
 function App() {
   return (
     <ThemeProvider>
       <Layout>
-        <Home />
+        <RouterProvider router={router} />
       </Layout>
     </ThemeProvider>
   )

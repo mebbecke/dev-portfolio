@@ -1,16 +1,16 @@
+import { ArrowUpRight, BookOpenText, Briefcase, Github } from "lucide-react"
 import { Button } from "../components/button"
 import SectionTitle from "../components/section-title"
 import GradientSubtitle from "../components/gradient-subtitle"
-import { projects } from "../constants/projects"
 import { techs } from "../constants/techs"
-import { ArrowUpRight, BookOpenText, Briefcase } from "lucide-react"
 import GradientBox from "../components/gradient-box"
+import { projects } from "../constants/projects.ts"
 
 // TODO:
 // [x] Escrever textos
-// [] Implementar formulário de contato
-// [] Estruturar 1 projeto
+// [x] Estruturar 1 projeto
 // [] Botão do menu fixado?
+// [] Implementar formulário de contato
 
 const Home = () => {
   return (
@@ -171,8 +171,8 @@ const Home = () => {
               {project.description}
             </p>
 
-            <div className="flex flex-row items-end justify-between">
-              <div className="flex flex-row gap-2">
+            <div className="flex items-end justify-between">
+              <div className="flex flex-row flex-wrap gap-2">
                 {project.techs.map((tech) => (
                   <span
                     key={tech}
@@ -182,11 +182,18 @@ const Home = () => {
                   </span>
                 ))}
               </div>
-              <Button size="small">
-                <a href={project.link}>
-                  <ArrowUpRight size={20} />
-                </a>
-              </Button>
+              <div className="flex flex-row gap-2">
+                <Button size="small" variant="ghost">
+                  <a href={project.githubUrl}>
+                    <Github size={20} />
+                  </a>
+                </Button>
+                <Button size="small">
+                  <a href={project.websiteUrl}>
+                    <ArrowUpRight size={20} />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         ))}
