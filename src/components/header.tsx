@@ -4,9 +4,7 @@ import ThemeToggleButton from "./theme-toggle"
 import * as Dialog from "@radix-ui/react-dialog"
 
 // TODO:
-// [x] Sidebar da versão mobile
-// [x] Links para as seções
-// [x] Download do CV
+// [] Manter o Header fixado na rolagem
 
 interface HeaderProps {
   scrollToSection: (event: React.SyntheticEvent) => void

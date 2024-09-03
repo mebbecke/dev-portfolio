@@ -1,8 +1,5 @@
 import { ChevronUp } from "lucide-react"
 
-// TODO:
-// [] Refatorar scrollTop para aparecer apenas no hover
-
 interface SectionTitleProps {
   children: string
   className?: string
@@ -16,15 +13,20 @@ const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <div className="flex flex-col items-center space-y-4">
-      {scrollTop && (
-        <button onClick={() => scrollTo({ top: 0, behavior: "smooth" })}>
-          <ChevronUp size={25} className="text-darkGray dark:text-white" />
-        </button>
-      )}
       <h2
         className={`text-3xl font-bold text-darkGray dark:text-white ${className}`}
       >
-        {children}
+        <div className="flex items-center gap-2">
+          {children}
+          {scrollTop && (
+            <button onClick={() => scrollTo({ top: 0, behavior: "smooth" })}>
+              <ChevronUp
+                size={25}
+                className="text-gray-400 hover:text-sky dark:text-darkGray dark:hover:text-sky"
+              />
+            </button>
+          )}
+        </div>
       </h2>
     </div>
   )

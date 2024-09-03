@@ -10,7 +10,6 @@ import { ProjectCard } from "../components/project-card.tsx"
 // TODO:
 // [x] Escrever textos
 // [x] Estruturar 1 projeto
-// [] Botão do menu fixado?
 // [] Implementar formulário de contato
 
 const Home = () => {

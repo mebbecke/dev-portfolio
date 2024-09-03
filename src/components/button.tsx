@@ -6,12 +6,13 @@ const buttonVariants = tv({
   variants: {
     variant: {
       primary:
-        "text-white dark:border dark:border-solid dark:border-sky border-none bg-sky dark:bg-transparent",
+        "text-white dark:border dark:border-solid dark:border-sky border-none bg-sky dark:bg-transparent dark:hover:bg-sky hover:bg-darkGray",
       secondary:
         "dark:text-gray-300 dark:text-sky text-darkGray border-darkGray border border-solid dark:border-gray-600",
-      ghost: "dark:text-white border-none",
+      ghost:
+        "dark:text-white border-none rounded-full hover:text-darkGray dark:hover:bg-darkGray",
       social:
-        "dark:text-gray-400 text-darkGray border-2 dark:border-gray-600 border-darkGray p-2",
+        "dark:text-gray-400 text-darkGray border dark:border-gray-600 border-darkGray p-2 dark:hover:text-lightGray dark:hover:border-lightGray hover:text-darkPurple hover:border-darkPurple",
     },
 
     // TODO: configurar variantes de tamanho
