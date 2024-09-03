@@ -38,7 +38,7 @@ const Home = () => {
           ótimas oportunidades para aprimorar meu conhecimento.
         </p>
         <Button variant="primary">
-          <a href="src\assets\cv-marina-ebbecke.pdf" download>
+          <a href="/cv-marina-ebbecke.pdf" download>
             Baixar meu currículo
           </a>
         </Button>

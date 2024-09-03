@@ -97,7 +97,7 @@ const Header = ({
               </nav>
               <div className="flex justify-center p-6">
                 <Button variant="primary" size="full">
-                  <a href="src\assets\cv-marina-ebbecke.pdf" download>
+                  <a href="/cv-marina-ebbecke.pdf" download>
                     Baixar meu currículo
                   </a>
                 </Button>
