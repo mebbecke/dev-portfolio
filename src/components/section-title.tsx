@@ -1,5 +1,8 @@
 import { ChevronUp } from "lucide-react"
 
+// TODO:
+// [] Refatorar scrollTop para aparecer apenas no hover
+
 interface SectionTitleProps {
   children: string
   className?: string

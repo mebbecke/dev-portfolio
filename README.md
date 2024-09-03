@@ -3,7 +3,7 @@
 Este é o meu portfolio, onde compartilharei os projetos pessoais que desenvolvi na minha carreira como desenvolvedora.
 O design foi feito por Mkolwey ([link para o Figma](https://www.figma.com/community/file/1372166977051146645/designer-developer-portfolio)).
 
-Acesse o site através [deste link](https://vercel.com/mebbeckes-projects/dev-portfolio/deployments).
+Acesse o site através [deste link](https://marinaebbecke.dev.br).
 
 No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas na seção abaixo!
 
@@ -12,7 +12,6 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 - [x] Temas
 - [x] Header e Footer
 - [ ] Página principal
-- [ ] Página de detalhes do projeto
 - [ ] Versão desktop
 - [ ] Blog
 

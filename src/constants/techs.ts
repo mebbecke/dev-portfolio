@@ -1,9 +1,4 @@
-export type Tech = {
-  name: string
-  icon: string
-  category: string
-  status: string
-}
+import { Tech } from "../types/tech"
 
 export const techs: Tech[] = [
   {

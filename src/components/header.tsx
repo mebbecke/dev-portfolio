@@ -6,7 +6,7 @@ import * as Dialog from "@radix-ui/react-dialog"
 // TODO:
 // [x] Sidebar da versão mobile
 // [x] Links para as seções
-// [] Download do CV
+// [x] Download do CV
 
 interface HeaderProps {
   scrollToSection: (event: React.SyntheticEvent) => void
@@ -20,14 +20,47 @@ const Header = ({
   setIsSidebarOpen,
 }: HeaderProps) => {
   return (
-    <header className="flex flex-row items-center justify-between px-8 py-6">
+    <header className="flex flex-row items-center justify-between px-8 py-6 lg:mx-36 lg:mb-20">
       <h1 className="light:text-black font-poppins text-2xl font-bold dark:text-white">
         m.e.
       </h1>
+
+      {/* Navbar */}
+      <div className="hidden flex-row items-center lg:flex">
+        <nav>
+          <ul
+            className="flex flex-row items-center gap-9 font-poppins dark:text-lightGray"
+            onClick={scrollToSection}
+          >
+            <li>
+              <a href="#about" className="hover:text-sky">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="#techs" className="hover:text-sky">
+                Tecnologias
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-sky">
+                Projetos
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-sky">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div className="flex flex-row items-center gap-3">
         <ThemeToggleButton />
+
+        {/* Sidebar */}
         <Dialog.Root open={isSidebarOpen} onOpenChange={setIsSidebarOpen}>
-          <Dialog.Trigger>
+          <Dialog.Trigger className="lg:hidden">
             <Button variant="ghost" size="small">
               <MenuIcon />
             </Button>

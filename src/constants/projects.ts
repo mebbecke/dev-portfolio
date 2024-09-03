@@ -1,13 +1,6 @@
-interface ProjectProps {
-  title: string
-  description: string
-  image: string
-  websiteUrl: string
-  githubUrl: string
-  techs: string[]
-}
+import { Project } from "../types/project"
 
-export const projects: ProjectProps[] = [
+export const projects: Project[] = [
   {
     title: "Portfólio Dev",
     description:

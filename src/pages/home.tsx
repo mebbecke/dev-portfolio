@@ -1,10 +1,11 @@
-import { ArrowUpRight, BookOpenText, Briefcase, Github } from "lucide-react"
+import { BookOpenText, Briefcase } from "lucide-react"
 import { Button } from "../components/button"
 import SectionTitle from "../components/section-title"
 import GradientSubtitle from "../components/gradient-subtitle"
 import { techs } from "../constants/techs"
 import GradientBox from "../components/gradient-box"
 import { projects } from "../constants/projects.ts"
+import { ProjectCard } from "../components/project-card.tsx"
 
 // TODO:
 // [x] Escrever textos
@@ -32,7 +33,7 @@ const Home = () => {
             Desenvolvedora web
           </GradientSubtitle>
         </div>
-        <p className="text-center font-poppins leading-loose text-darkGray dark:text-lightGray">
+        <p className="text-center font-poppins leading-loose text-darkGray dark:text-lightGray lg:w-[793px]">
           Desenvolvedora web apaixonada por aprender e trilhando o caminho para
           se tornar fullstack. Não tenho medo de novos desafios e vejo neles
           ótimas oportunidades para aprimorar meu conhecimento.
@@ -47,7 +48,7 @@ const Home = () => {
       {/* ABOUT */}
       <section id="about" className="flex flex-col items-center space-y-8">
         <SectionTitle>Sobre mim</SectionTitle>
-        <div className="space-y-8 text-center text-base text-darkPurple dark:text-lightGray">
+        <div className="space-y-8 text-center text-base text-darkPurple dark:text-lightGray lg:w-[793px]">
           <p>
             Olá, sou desenvolvedora de software e estudante de Análise e
             Desenvolvimento de Sistemas, buscando me tornar desenvolvedora
@@ -88,7 +89,7 @@ const Home = () => {
 
         {/* ícones das techs */}
         <div className="flex flex-col items-center space-y-8">
-          <GradientBox className="space-y-4">
+          <GradientBox className="space-y-4 lg:space-y-8">
             <div className="flex flex-row items-center gap-3">
               <div className="w-12 rounded-lg bg-[#BCE7FA] p-3 text-plumber dark:bg-[#F5F8FF]">
                 <Briefcase />
@@ -97,7 +98,7 @@ const Home = () => {
                 Usando atualmente
               </h3>
             </div>
-            <div className="grid grid-cols-3 items-center gap-6">
+            <div className="flex flex-wrap items-center justify-around gap-6">
               {techs.map(
                 (tech) =>
                   tech.status === "using" && (
@@ -126,7 +127,7 @@ const Home = () => {
                 Estudando
               </h3>
             </div>
-            <div className="grid grid-cols-3 items-center gap-6">
+            <div className="flex flex-wrap items-center justify-around gap-6">
               {techs.map(
                 (tech) =>
                   tech.status === "learning" && (
@@ -156,46 +157,7 @@ const Home = () => {
         </div>
 
         {projects.map((project) => (
-          <div key={project.title} className="flex flex-col space-y-4">
-            <figure>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-xl"
-              />
-            </figure>
-            <h3 className="text-lg font-semibold text-darkGray dark:text-lightGray">
-              {project.title}
-            </h3>
-            <p className="text-darkPurple dark:text-lightGray">
-              {project.description}
-            </p>
-
-            <div className="flex items-end justify-between">
-              <div className="flex flex-row flex-wrap gap-2">
-                {project.techs.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs text-plumber dark:text-gray-400"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-row gap-2">
-                <Button size="small" variant="ghost">
-                  <a href={project.githubUrl}>
-                    <Github size={20} />
-                  </a>
-                </Button>
-                <Button size="small">
-                  <a href={project.websiteUrl}>
-                    <ArrowUpRight size={20} />
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
+          <ProjectCard key={project.title} project={project} />
         ))}
       </section>
 
@@ -207,7 +169,7 @@ const Home = () => {
         </div>
 
         {/* Formulário de contato */}
-        <form className="flex w-full flex-col space-y-3 text-darkPurple dark:text-white">
+        <form className="flex w-full flex-col space-y-3 text-darkPurple dark:text-white lg:w-[600px]">
           <label htmlFor="name" className="text-sm font-semibold">
             Nome
           </label>
