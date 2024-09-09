@@ -11,8 +11,8 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 
 - [x] Temas
 - [x] Header e Footer
-- [ ] Página principal
 - [x] Versão desktop
+- [ ] Página principal
 - [ ] Blog
 
 ## Principais Tecnologias Utilizadas
@@ -21,7 +21,7 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 - React
 - TailwindCSS
 
-## Como Rodar o Projeto localmente
+## Como rodar o projeto localmente
 
 1. Clone este repositório para o seu ambiente local.
 2. Certifique-se de ter o NodeJS instalado em sua máquina.

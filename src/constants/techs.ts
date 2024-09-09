@@ -29,7 +29,7 @@ export const techs: Tech[] = [
     name: "Node.js",
     icon: "/Nodejs.svg",
     category: "backend",
-    status: "using",
+    status: "learning",
   },
   {
     name: "Git",
