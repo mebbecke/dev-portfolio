@@ -1,10 +1,8 @@
+import { useEffect, useState } from "react"
 import { MenuIcon, X } from "lucide-react"
+import * as Dialog from "@radix-ui/react-dialog"
 import { Button } from "./button"
 import ThemeToggleButton from "./theme-toggle"
-import * as Dialog from "@radix-ui/react-dialog"
-
-// TODO:
-// [] Manter o Header fixado na rolagem
 
 interface HeaderProps {
   scrollToSection: (event: React.SyntheticEvent) => void
@@ -17,9 +15,29 @@ const Header = ({
   isSidebarOpen,
   setIsSidebarOpen,
 }: HeaderProps) => {
+  const [isFixed, setIsFixed] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setIsFixed(true)
+      } else {
+        setIsFixed(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <header className="flex flex-row items-center justify-between px-8 py-6 lg:mx-36 lg:mb-20">
-      <h1 className="light:text-black font-poppins text-2xl font-bold dark:text-white">
+    <header
+      className={`flex flex-row items-center justify-between rounded-xl px-8 py-6 transition-colors duration-300 lg:mb-20 lg:px-36 ${isFixed ? "fixed top-0 z-20 w-full cursor-pointer bg-[#E0E8F690] dark:bg-[#1C1C1C90]" : "relative"}`}
+    >
+      <h1
+        className="light:text-black font-poppins text-2xl font-bold dark:text-white"
+        onClick={() => scrollTo({ top: 0, behavior: "smooth" })}
+      >
         m.e.
       </h1>
 

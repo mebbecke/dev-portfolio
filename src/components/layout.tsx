@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
     const target = event.target as HTMLAnchorElement
     const id = target.getAttribute("href")?.replace("#", "")
     const section = document.getElementById(String(id))
-    section?.scrollIntoView({ behavior: "smooth" })
+    section?.scrollIntoView({ behavior: "smooth", block: "start" })
     setIsSidebarOpen(false)
   }
 

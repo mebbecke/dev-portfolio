@@ -45,7 +45,10 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="flex flex-col items-center space-y-8">
+      <section
+        id="about"
+        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
+      >
         <SectionTitle>Sobre mim</SectionTitle>
         <div className="space-y-8 text-center text-base text-darkPurple dark:text-lightGray lg:w-[793px]">
           <p>
@@ -80,7 +83,10 @@ const Home = () => {
       </section>
 
       {/* SKILLS */}
-      <section id="techs" className="flex flex-col items-center space-y-8">
+      <section
+        id="techs"
+        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
+      >
         <div className="flex flex-col items-center">
           <SectionTitle>Tecnologias</SectionTitle>
           <GradientSubtitle>Minha stack</GradientSubtitle>
@@ -149,7 +155,10 @@ const Home = () => {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="flex flex-col items-center space-y-8">
+      <section
+        id="projects"
+        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
+      >
         <div className="flex flex-col items-center">
           <SectionTitle>Projetos</SectionTitle>
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
@@ -161,7 +170,10 @@ const Home = () => {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="flex flex-col items-center space-y-8">
+      <section
+        id="contact"
+        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
+      >
         <div className="flex flex-col items-center">
           <SectionTitle>Contato</SectionTitle>
           <GradientSubtitle>Me envie uma mensagem</GradientSubtitle>
