@@ -8,8 +8,6 @@ import { projects } from "../constants/projects.ts"
 import { ProjectCard } from "../components/project-card.tsx"
 
 // TODO:
-// [x] Escrever textos
-// [x] Estruturar 1 projeto
 // [] Implementar formulário de contato
 
 const Home = () => {
@@ -164,9 +162,11 @@ const Home = () => {
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
         </div>
 
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+        <div className="flex flex-wrap gap-10">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </section>
 
       {/* CONTACT */}
