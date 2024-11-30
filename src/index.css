@@ -13,7 +13,7 @@
 
 input {
   background: none;
-  border: 1px solid #484E53;
+  border: 1px solid #484e53;
   border-radius: 10px;
   padding: 0.75rem;
   font-size: small;
@@ -23,14 +23,14 @@ input {
   }
 
   .dark & {
-    border-color: #D6DDED;
+    border-color: #d6dded;
   }
-} 
+}
 
 textarea {
   resize: none;
   background: none;
-  border: 1px solid #484E53;
+  border: 1px solid #484e53;
   border-radius: 10px;
   padding: 0.75rem;
   height: 140px;
@@ -41,14 +41,16 @@ textarea {
   }
 
   .dark & {
-    border-color: #D6DDED;
+    border-color: #d6dded;
   }
 }
-
+.dark span.font-bold {
+  color: #4fc3f7;
+}
 .dark {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 .light {
-  background-color: #E0E8F6;
+  background-color: #e0e8f6;
 }

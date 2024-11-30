@@ -19,7 +19,7 @@ const Header = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 85) {
         setIsFixed(true)
       } else {
         setIsFixed(false)
@@ -32,7 +32,7 @@ const Header = ({
 
   return (
     <header
-      className={`flex flex-row items-center justify-between rounded-xl px-8 py-6 transition-colors duration-300 lg:mb-20 lg:px-36 ${isFixed ? "fixed top-0 z-20 w-full cursor-pointer bg-[#E0E8F699] dark:bg-[#1C1C1C99]" : "relative"}`}
+      className={`flex h-[85px] flex-row items-center justify-between rounded-xl px-8 py-6 transition-all duration-300 lg:px-36 ${isFixed ? "fixed top-0 z-20 w-full cursor-pointer bg-[#E0E8F690] shadow-lg dark:bg-[#1C1C1C90]" : "relative"}`}
     >
       <h1
         className="light:text-black font-poppins text-2xl font-bold dark:text-white"
