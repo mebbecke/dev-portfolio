@@ -6,12 +6,12 @@ const Footer = () => {
     <div className="flex flex-col items-center space-y-6 border-t border-solid border-gray-500 py-8">
       <div className="flex flex-row gap-6">
         <Button variant="social" size="small">
-          <a href="https://www.linkedin.com/in/marina-ebbecke/">
+          <a href="https://www.linkedin.com/in/marina-ebbecke/" target="_blank">
             <Linkedin size={20} />
           </a>
         </Button>
         <Button variant="social" size="small">
-          <a href="https://github.com/mebbecke">
+          <a href="https://github.com/mebbecke" target="_blank">
             <Github size={20} />
           </a>
         </Button>
