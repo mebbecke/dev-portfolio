@@ -7,11 +7,6 @@ import GradientBox from "../components/gradient-box"
 import { projects } from "../constants/projects.ts"
 import { ProjectCard } from "../components/project-card.tsx"
 
-// TODO:
-// [x] Escrever textos
-// [x] Estruturar 1 projeto
-// [] Implementar formulário de contato
-
 const Home = () => {
   return (
     <main className="space-y-24">
@@ -45,30 +40,36 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section
-        id="about"
-        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
-      >
+      <section id="about" className="flex flex-col items-center space-y-8">
         <SectionTitle>Sobre mim</SectionTitle>
         <div className="space-y-8 text-center text-base text-darkPurple dark:text-lightGray lg:w-[793px]">
           <p>
             Olá, sou desenvolvedora de software e estudante de Análise e
-            Desenvolvimento de Sistemas, buscando me tornar desenvolvedora
-            fullstack. Atualmente estou trabalhando como frontend, criando
-            interfaces acessíveis, escaláveis e amigáveis ao usuário.
-            Curiosamente, meu primeiro contato com o desenvolvimento web foi
-            ainda criança, quando criava páginas usando HTML e CSS para mostrar
-            meus desenhos e quadrinhos sobre jogos que eu jogava na época.
+            Desenvolvimento de Sistemas, buscando me aprimorar como
+            desenvolvedora fullstack. Atualmente estou trabalhando tanto como
+            <span className="font-bold"> frontend</span>, criando interfaces
+            acessíveis, escaláveis e amigáveis ao usuário, quanto no{" "}
+            <span className="font-bold">backend</span>, mantendo APIs e criando
+            novas funcionalidades. Curiosamente, meu primeiro contato com o
+            desenvolvimento web foi ainda criança, quando criava páginas no
+            Neopets usando HTML e CSS para mostrar meus desenhos e quadrinhos
+            sobre jogos que eu jogava na época.
           </p>
           <p>
-            Sou movida pela resolução de problemas e gosto de entender o
-            funcionamento das coisas, e por isso, amo estudar, fazer anotações e
+            Sou{" "}
+            <span className="font-bold">
+              movida pela resolução de problemas
+            </span>{" "}
+            e gosto de entender o funcionamento das coisas, e por isso,{" "}
+            <span className="font-bold">amo estudar</span>, fazer anotações e
             buscar novos projetos para colocar o estudo em prática. Me considero
             perfeccionista, então estou sempre buscando melhorar e aprimorar meu
             código. Trabalhei por mais de 10 anos na área cultural como
             musicista e educadora musical, e isso me trouxe habilidades de
-            comunicação, organização e principalmente a disciplina, que
-            considero muito importante para o trabalho com tecnologia.
+            <span className="font-bold"> comunicação</span>,{" "}
+            <span className="font-bold">organização</span> e principalmente a{" "}
+            <span className="font-bold">disciplina</span>, que considero muito
+            importante para o trabalho com tecnologia.
           </p>
           <p>
             No meu tempo livre, gosto de jogar no computador (principalmente
@@ -83,10 +84,7 @@ const Home = () => {
       </section>
 
       {/* SKILLS */}
-      <section
-        id="techs"
-        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
-      >
+      <section id="techs" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Tecnologias</SectionTitle>
           <GradientSubtitle>Minha stack</GradientSubtitle>
@@ -155,10 +153,7 @@ const Home = () => {
       </section>
 
       {/* PROJECTS */}
-      <section
-        id="projects"
-        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
-      >
+      <section id="projects" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Projetos</SectionTitle>
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
@@ -170,10 +165,7 @@ const Home = () => {
       </section>
 
       {/* CONTACT */}
-      <section
-        id="contact"
-        className="flex scroll-mt-[85px] flex-col items-center space-y-8"
-      >
+      <section id="contact" className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <SectionTitle>Contato</SectionTitle>
           <GradientSubtitle>Me envie uma mensagem</GradientSubtitle>
