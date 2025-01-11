@@ -36,7 +36,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             </a>
           </Button>
           <Button size="small">
-            <a href={project.websiteUrl}>
+            <a href={project.websiteUrl} target="_blank">
               <ArrowUpRight size={20} />
             </a>
           </Button>

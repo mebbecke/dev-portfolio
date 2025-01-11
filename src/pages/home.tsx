@@ -1,11 +1,11 @@
 import { BookOpenText, Briefcase } from "lucide-react"
 import { Button } from "../components/button"
-import SectionTitle from "../components/section-title"
-import GradientSubtitle from "../components/gradient-subtitle"
-import { techs } from "../constants/techs"
 import GradientBox from "../components/gradient-box"
-import { projects } from "../constants/projects.ts"
+import GradientSubtitle from "../components/gradient-subtitle"
 import { ProjectCard } from "../components/project-card.tsx"
+import SectionTitle from "../components/section-title"
+import { projects } from "../constants/projects.ts"
+import { techs } from "../constants/techs"
 
 const Home = () => {
   return (
@@ -159,7 +159,7 @@ const Home = () => {
           <GradientSubtitle>Meus trabalhos</GradientSubtitle>
         </div>
 
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
