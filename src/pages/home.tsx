@@ -46,14 +46,12 @@ const Home = () => {
           <p>
             Olá, sou desenvolvedora de software e estudante de Análise e
             Desenvolvimento de Sistemas, buscando me aprimorar como
-            desenvolvedora fullstack. Atualmente estou trabalhando tanto como
-            <span className="font-bold"> frontend</span>, criando interfaces
-            acessíveis, escaláveis e amigáveis ao usuário, quanto no{" "}
-            <span className="font-bold">backend</span>, mantendo APIs e criando
-            novas funcionalidades. Curiosamente, meu primeiro contato com o
-            desenvolvimento web foi ainda criança, quando criava páginas no
-            Neopets usando HTML e CSS para mostrar meus desenhos e quadrinhos
-            sobre jogos que eu jogava na época.
+            desenvolvedora fullstack. Atualmente estou trabalhando como
+            <span className="font-bold"> Front-End</span>, criando interfaces
+            acessíveis, escaláveis e amigáveis ao usuário. Curiosamente, meu
+            primeiro contato com o desenvolvimento web foi ainda criança, quando
+            criava páginas no Neopets usando HTML e CSS para mostrar meus
+            desenhos e quadrinhos.
           </p>
           <p>
             Sou{" "}
