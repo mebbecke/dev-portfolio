@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { ThemeProvider } from "./contexts/theme-context"
 import Layout from "./components/layout"
+import SpotifyHoverCard from "./components/spotify-hover-card"
+import { ThemeProvider } from "./contexts/theme-context"
 import Home from "./pages/home"
 
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ function App() {
   return (
     <ThemeProvider>
       <Layout>
+        <SpotifyHoverCard />
         <RouterProvider router={router} />
       </Layout>
     </ThemeProvider>
