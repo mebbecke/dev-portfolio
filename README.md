@@ -12,7 +12,7 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 - [x] Temas
 - [x] Header e Footer
 - [x] Versão desktop
-- [ ] Página principal
+- [x] Página principal
 - [ ] Blog
 
 ## Principais Tecnologias Utilizadas
@@ -20,6 +20,7 @@ No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas 
 - TypeScript
 - React
 - TailwindCSS
+- Vite
 
 ## Como rodar o projeto localmente
 
