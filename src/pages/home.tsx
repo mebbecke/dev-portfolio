@@ -172,7 +172,7 @@ const Home = () => {
         </div>
 
         {/* Formulário de contato */}
-        <form className="flex w-full flex-col space-y-3 text-darkPurple dark:text-white lg:w-[600px]">
+        {/* <form className="flex w-full flex-col space-y-3 text-darkPurple dark:text-white lg:w-[600px]">
           <label htmlFor="name" className="text-sm font-semibold">
             Nome
           </label>
@@ -186,7 +186,7 @@ const Home = () => {
           </label>
           <textarea id="message" name="message" placeholder="Em breve" />
           <Button variant="secondary">Enviar mensagem</Button>
-        </form>
+        </form> */}
 
         <div className="flex flex-row gap-1 rounded-xl border-2 border-darkGray p-3">
           <img src="Gmail.svg" alt="Gmail" />
