@@ -1,17 +1,17 @@
-import { BookOpenText, Briefcase } from "lucide-react"
-import { Button } from "../components/button"
-import GradientBox from "../components/gradient-box"
-import GradientSubtitle from "../components/gradient-subtitle"
-import { ProjectCard } from "../components/project-card.tsx"
-import SectionTitle from "../components/section-title"
-import { projects } from "../constants/projects.ts"
-import { techs } from "../constants/techs"
+import { BookOpenText, Briefcase } from 'lucide-react';
+import { Button } from '../components/button';
+import GradientBox from '../components/gradient-box';
+import GradientSubtitle from '../components/gradient-subtitle';
+import { ProjectCard } from '../components/project-card.tsx';
+import SectionTitle from '../components/section-title';
+import { projects } from '../constants/projects.ts';
+import { techs } from '../constants/techs';
 
 const Home = () => {
   return (
     <main className="space-y-24">
       {/* HERO */}
-      <section id="hero" className="flex flex-col items-center space-y-8">
+      <section id="hero" className="mt-20 flex flex-col items-center space-y-8">
         <div className="relative h-[197px] w-[202px] rounded-full">
           <img
             src="/images/hero.jpg"
@@ -54,18 +54,18 @@ const Home = () => {
             desenhos e quadrinhos.
           </p>
           <p>
-            Sou{" "}
+            Sou{' '}
             <span className="font-bold">
               movida pela resolução de problemas
-            </span>{" "}
-            e gosto de entender o funcionamento das coisas, e por isso,{" "}
+            </span>{' '}
+            e gosto de entender o funcionamento das coisas, e por isso,{' '}
             <span className="font-bold">amo estudar</span>, fazer anotações e
             buscar novos projetos para colocar o estudo em prática. Me considero
             perfeccionista, então estou sempre buscando melhorar e aprimorar meu
             código. Trabalhei por mais de 10 anos na área cultural como
             musicista e educadora musical, e isso me trouxe habilidades de
-            <span className="font-bold"> comunicação</span>,{" "}
-            <span className="font-bold">organização</span> e principalmente a{" "}
+            <span className="font-bold"> comunicação</span>,{' '}
+            <span className="font-bold">organização</span> e principalmente a{' '}
             <span className="font-bold">disciplina</span>, que considero muito
             importante para o trabalho com tecnologia.
           </p>
@@ -102,7 +102,7 @@ const Home = () => {
             <div className="flex flex-wrap items-center justify-around gap-6">
               {techs.map(
                 (tech) =>
-                  tech.status === "using" && (
+                  tech.status === 'using' && (
                     <figure
                       key={tech.name}
                       className="flex flex-col items-center space-y-1"
@@ -131,7 +131,7 @@ const Home = () => {
             <div className="flex flex-wrap items-center justify-around gap-6">
               {techs.map(
                 (tech) =>
-                  tech.status === "learning" && (
+                  tech.status === 'learning' && (
                     <figure
                       key={tech.name}
                       className="flex flex-col items-center space-y-1"
@@ -196,7 +196,7 @@ const Home = () => {
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
