@@ -1,6 +1,6 @@
 interface GradientSubtitleProps {
-  children: string
-  className?: string
+  children: string;
+  className?: string;
 }
 
 const GradientSubtitle = ({ children, className }: GradientSubtitleProps) => {
@@ -10,7 +10,7 @@ const GradientSubtitle = ({ children, className }: GradientSubtitleProps) => {
     >
       {children}
     </p>
-  )
-}
+  );
+};
 
-export default GradientSubtitle
+export default GradientSubtitle;

@@ -1,6 +1,6 @@
 interface GradientBoxProps {
-  children: React.ReactNode
-  className?: string
+  children: React.ReactNode;
+  className?: string;
 }
 
 const GradientBox = ({ children, className }: GradientBoxProps) => {
@@ -10,7 +10,7 @@ const GradientBox = ({ children, className }: GradientBoxProps) => {
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default GradientBox
+export default GradientBox;

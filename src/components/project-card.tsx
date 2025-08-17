@@ -1,9 +1,9 @@
-import { ArrowUpRight, Github } from "lucide-react"
-import { Project } from "../types/project"
-import { Button } from "./button"
+import { ArrowUpRight, Github } from 'lucide-react';
+import { Project } from '../types/project';
+import { Button } from './button';
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
@@ -43,5 +43,5 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react"
-import { MenuIcon, X } from "lucide-react"
-import * as Dialog from "@radix-ui/react-dialog"
-import { Button } from "./button"
-import ThemeToggleButton from "./theme-toggle"
+import * as Dialog from '@radix-ui/react-dialog';
+import { MenuIcon, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Button } from './button';
+import ThemeToggleButton from './theme-toggle';
 
 interface HeaderProps {
-  scrollToSection: (event: React.SyntheticEvent) => void
-  isSidebarOpen: boolean
-  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>
+  scrollToSection: (event: React.SyntheticEvent) => void;
+  isSidebarOpen: boolean;
+  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Header = ({
@@ -15,28 +15,28 @@ const Header = ({
   isSidebarOpen,
   setIsSidebarOpen,
 }: HeaderProps) => {
-  const [isFixed, setIsFixed] = useState(false)
+  const [isFloating, setIsFloating] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 85) {
-        setIsFixed(true)
+      if (window.scrollY > 1) {
+        setIsFloating(true);
       } else {
-        setIsFixed(false)
+        setIsFloating(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header
-      className={`flex h-[85px] flex-row items-center justify-between rounded-xl px-8 py-6 transition-all duration-300 lg:px-36 ${isFixed ? "fixed top-0 z-20 w-full cursor-pointer bg-[#E0E8F690] shadow-lg dark:bg-[#1C1C1C90]" : "relative"}`}
+      className={`fixed top-0 z-20 flex h-[85px] w-full flex-row items-center justify-between rounded-xl px-8 py-6 transition-all duration-300 lg:px-36 ${isFloating && 'bg-[#E0E8F690] shadow-lg dark:bg-[#1C1C1C90]'}`}
     >
       <h1
-        className="light:text-black font-poppins text-2xl font-bold dark:text-white"
-        onClick={() => scrollTo({ top: 0, behavior: "smooth" })}
+        className={`light:text-black font-poppins text-2xl font-bold dark:text-white ${isFloating ? 'cursor-pointer' : 'cursor-default'}`}
+        onClick={() => scrollTo({ top: 0, behavior: 'smooth' })}
       >
         m.e.
       </h1>
@@ -125,7 +125,7 @@ const Header = ({
         </Dialog.Root>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,28 +1,28 @@
-import { useState } from "react"
-import Footer from "./footer"
-import Header from "./header"
+import { useState } from 'react';
+import Footer from './footer';
+import Header from './header';
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   function scrollToSection(event: React.SyntheticEvent) {
-    event.preventDefault()
-    const target = event.target as HTMLAnchorElement
-    const id = target.getAttribute("href")?.replace("#", "")
-    const section = document.getElementById(String(id))
+    event.preventDefault();
+    const target = event.target as HTMLAnchorElement;
+    const id = target.getAttribute('href')?.replace('#', '');
+    const section = document.getElementById(String(id));
 
     // section?.scrollIntoView({ behavior: "smooth", block: "center" })
 
     if (section) {
-      const headerHeight = document.querySelector("header")?.clientHeight || 0
-      const sectionPosition = section.offsetTop - headerHeight * 2
-      window.scrollTo({ top: sectionPosition, behavior: "smooth" })
+      const headerHeight = document.querySelector('header')?.clientHeight || 0;
+      const sectionPosition = section.offsetTop - headerHeight * 2;
+      window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
     }
-    setIsSidebarOpen(false)
+    setIsSidebarOpen(false);
   }
 
   return (
@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="mx-8 my-6 flex-grow">{children}</div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
