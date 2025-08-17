@@ -5,22 +5,30 @@ O design foi feito por Mkolwey ([link para o Figma](https://www.figma.com/commun
 
 Acesse o site através [deste link](https://marinaebbecke.dev.br).
 
-No momento o portfolio está em desenvolvimento. Acompanhe as principais etapas na seção abaixo!
-
-## TODO
-
-- [x] Temas
-- [x] Header e Footer
-- [x] Versão desktop
-- [x] Página principal
-- [ ] Blog
-
 ## Principais Tecnologias Utilizadas
 
 - TypeScript
 - React
 - TailwindCSS
 - Vite
+
+### Conceitos utilizados
+
+- HTML Semântico
+- Componentização
+- Gerenciamento de tema (claro/escuro)
+- Estilização com TailwindCSS
+- Responsividade (mobile-first)
+- Tipagem estática com TypeScript
+- Organização de código
+- Gerenciamento de estado com React Hooks
+
+## Próximas melhorias e features
+
+- [ ] Testes unitários
+- [ ] Tradução com i18n
+- [ ] Acessibilidade
+- [ ] Implementar um blog
 
 ## Como rodar o projeto localmente
 
