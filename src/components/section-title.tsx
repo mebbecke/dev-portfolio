@@ -1,6 +1,6 @@
 interface SectionTitleProps {
-  children: string
-  className?: string
+  children: string;
+  className?: string;
 }
 
 const SectionTitle = ({ children, className }: SectionTitleProps) => {
@@ -12,7 +12,7 @@ const SectionTitle = ({ children, className }: SectionTitleProps) => {
         <div className="flex items-center gap-2">{children}</div>
       </h2>
     </div>
-  )
-}
+  );
+};
 
-export default SectionTitle
+export default SectionTitle;

@@ -1,5 +1,5 @@
-import { Github, Linkedin } from "lucide-react"
-import { Button } from "./button"
+import { Github, Linkedin } from 'lucide-react';
+import { Button } from './button';
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
         2024 - Marina Ebbecke
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
