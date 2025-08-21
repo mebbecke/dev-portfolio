@@ -1,34 +1,30 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { MenuIcon, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { scrollToSection } from '../utils/scrollToSection';
 import { Button } from './button';
 import ThemeToggleButton from './theme-toggle';
 
-interface HeaderProps {
-  scrollToSection: (event: React.SyntheticEvent) => void;
-  isSidebarOpen: boolean;
-  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Header = ({
-  scrollToSection,
-  isSidebarOpen,
-  setIsSidebarOpen,
-}: HeaderProps) => {
+const Header = () => {
   const [isFloating, setIsFloating] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleFloatingHeader = useCallback(() => {
+    setIsFloating(window.scrollY > 1);
+  }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 1) {
-        setIsFloating(true);
-      } else {
-        setIsFloating(false);
-      }
-    };
+    window.addEventListener('scroll', handleFloatingHeader);
+    return () => window.removeEventListener('scroll', handleFloatingHeader);
+  }, [handleFloatingHeader]);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const handleScrollToSection = useCallback(
+    (event: React.SyntheticEvent) => {
+      scrollToSection(event);
+      setIsSidebarOpen(false);
+    },
+    [setIsSidebarOpen],
+  );
 
   return (
     <header
@@ -46,7 +42,7 @@ const Header = ({
         <nav>
           <ul
             className="flex flex-row items-center gap-9 font-poppins dark:text-lightGray"
-            onClick={scrollToSection}
+            onClick={handleScrollToSection}
           >
             <li>
               <a href="#about" className="hover:text-sky">
@@ -96,7 +92,7 @@ const Header = ({
                 <Dialog.Close>
                   <ul
                     className="space-y-4 text-start text-gray-800 dark:text-white"
-                    onClick={scrollToSection}
+                    onClick={handleScrollToSection}
                   >
                     <li>
                       <a href="#about">Sobre</a>
