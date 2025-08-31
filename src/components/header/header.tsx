@@ -19,13 +19,10 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleFloatingHeader);
   }, [handleFloatingHeader]);
 
-  const handleScrollToSection = useCallback(
-    (event: React.SyntheticEvent) => {
-      scrollToSection(event);
-      setIsSidebarOpen(false);
-    },
-    [setIsSidebarOpen],
-  );
+  const handleScrollToSection = useCallback((event: React.SyntheticEvent) => {
+    scrollToSection(event);
+    setIsSidebarOpen(false);
+  }, []);
 
   const scrollToTop = useCallback(() => {
     scrollTo({ top: 0, behavior: 'smooth' });

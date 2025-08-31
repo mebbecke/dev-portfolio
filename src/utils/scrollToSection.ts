@@ -2,6 +2,7 @@ export function scrollToSection(event: React.SyntheticEvent) {
   event.preventDefault();
   const target = event.target as HTMLAnchorElement;
   const id = target.getAttribute('href')?.replace('#', '');
+  if (!id) return;
   const section = document.getElementById(String(id));
 
   // Alternative implementation (not working properly on some sections)
