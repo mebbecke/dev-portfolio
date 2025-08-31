@@ -27,9 +27,9 @@ const Header = () => {
     [setIsSidebarOpen],
   );
 
-  const scrollToTop = useCallback((isSidebar: boolean) => {
+  const scrollToTop = useCallback(() => {
     scrollTo({ top: 0, behavior: 'smooth' });
-    if (isSidebar) setIsSidebarOpen(false);
+    setIsSidebarOpen(false);
   }, []);
 
   type NavLinkProps = {
@@ -62,10 +62,7 @@ const Header = () => {
 
   return (
     <header className={styles.header({ isFloating })}>
-      <h1
-        className={styles.logo({ isFloating })}
-        onClick={() => scrollToTop(false)}
-      >
+      <h1 className={styles.logo({ isFloating })} onClick={scrollToTop}>
         m.e.
       </h1>
 
@@ -92,7 +89,7 @@ const Header = () => {
               <div className={styles.sidebarHeader}>
                 <Dialog.Title
                   className={styles.sidebarTitle}
-                  onClick={() => scrollToTop(true)}
+                  onClick={scrollToTop}
                 >
                   m.e.
                 </Dialog.Title>
